@@ -1,0 +1,22 @@
+.container{
+    height:100vh;
+    background-color: aqua;
+}
+
+.title{
+    position:absolute;
+    top:15%;
+    left:10%;
+    font-size: 32pt;
+}
+
+.section{
+    background-color: burlywood;
+    position:absolute;
+    top:30%;
+    left:10%;
+}
+
+.display{
+    height:60vh;
+}

@@ -43,8 +43,14 @@
     align-items: center;
 }
 
-.image::before{
-    
+.backButton{
+    background-color: #433F3A;
+    height:40px;
+    width:40px;
+    border-radius: 20px;
+    border:none;
+    margin: 1rem 0 1rem 0;
+    box-shadow:0 1.5px 4px 3px RGBA(0,0,0,0.15);
 }
 
 @media screen and (max-width: 600px) {

@@ -1,0 +1,54 @@
+{
+    "projects":[
+        {   
+            "projectId":"uno",
+            "projectName":"Uno",
+            "projectYear":"2020",
+            "projectMedium":"Acrylic on Paper",
+            "projectDescription":"Photographs encapsulating the artists memories of places close to her heart. The choice of medium is deliberate as each shot is taken ‘as-is’ and unedited reflecting how one’s memory is only recollected after each moment has passed.",
+            "projectPictures":[
+                "./images/sample-1.jpg"
+            ]
+        },
+        {   
+            "projectId":"dos",
+            "projectName":"Dos",
+            "projectYear":"2021",
+            "projectMedium":"Film. Black and White",
+            "projectDescription":"Photographs encapsulating the artists memories of places close to her heart. The choice of medium is deliberate as each shot is taken ‘as-is’ and unedited reflecting how one’s memory is only recollected after each moment has passed.",
+            "projectPictures":[
+                "./images/sample-1.jpg"
+            ]
+        },
+        {   
+            "projectId":"tres",
+            "projectName":"Tres",
+            "projectYear":"2022",
+            "projectMedium":"Holograph",
+            "projectDescription":"Photographs encapsulating the artists memories of places close to her heart. The choice of medium is deliberate as each shot is taken ‘as-is’ and unedited reflecting how one’s memory is only recollected after each moment has passed.",
+            "projectPictures":[
+                "./images/sample-1.jpg"
+            ]
+        },
+        {
+            "projectId":"cuatro",
+            "projectName":"Cuatro",
+            "projectYear":"2022",
+            "projectMedium":"Holograph",
+            "projectDescription":"Photographs encapsulating the artists memories of places close to her heart. The choice of medium is deliberate as each shot is taken ‘as-is’ and unedited reflecting how one’s memory is only recollected after each moment has passed.",
+            "projectPictures":[
+                "./images/sample-1.jpg"
+            ]
+        },
+        {
+            "projectId":"cinco",
+            "projectName":"Cinco",
+            "projectYear":"2022",
+            "projectMedium":"Holograph",
+            "projectDescription":"Photographs encapsulating the artists memories of places close to her heart. The choice of medium is deliberate as each shot is taken ‘as-is’ and unedited reflecting how one’s memory is only recollected after each moment has passed.",
+            "projectPictures":[
+                "./images/sample-1.jpg"
+            ]
+        }
+    ]
+}

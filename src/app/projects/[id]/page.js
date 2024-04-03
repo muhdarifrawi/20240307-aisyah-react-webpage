@@ -9,9 +9,15 @@ export default async function ProjectsPage({params}){
     const projects = Object.keys(data.projects).map((obj,i) => {
         if(data.projects[obj].projectId == params.id){
             console.log("checking id filter", data.projects[obj]);
+            
             return data.projects[obj]
         }
     });
+    //console.log("iamge path: ", projects[0]["projectPictures"][0])
+    let imgPath="";
+    if(projects[0]["projectPictures"][0]){
+        imgPath =  `../.` + projects[0]["projectPictures"][0]
+    }
     return(
         <section className={commonStyles.container}>
             <section>
@@ -25,8 +31,20 @@ export default async function ProjectsPage({params}){
                 </Link>
             </section>
             <section>
-            <h1>{params.id}</h1>
-            <p>{data["projects"][0]["projectYear"]}</p>
+                <div className={commonStyles.imageContainer}>
+                    <img className={commonStyles.projectImages} 
+                    src={imgPath}/>
+                </div>
+            </section>
+            <section className={commonStyles.descriptionCard}>
+                <div className={commonStyles.titleContent}>
+                    <h1>{projects[0]["projectName"]},</h1>
+                    <p>{projects[0]["projectYear"]}</p>
+                    <p>{projects[0]["projectMedium"]}</p>
+                </div>
+                <div className={commonStyles.descriptionContent}>
+                    <p>{projects[0]["projectDescription"]}</p>
+                </div>
             </section>
             
         </section>

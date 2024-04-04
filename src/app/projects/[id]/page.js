@@ -3,20 +3,18 @@ import Link from 'next/link';
 import commonStyles from "../../css/common.module.css";
 
 export default async function ProjectsPage({params}){
+    console.log("=================== In ProjectsPage ======================");
     const file = await fs.readFile(process.cwd() + "/src/app/data/projects.json", 
                                     "utf8");
     const data  = JSON.parse(file);
-    const projects = Object.keys(data.projects).map((obj,i) => {
-        if(data.projects[obj].projectId == params.id){
-            console.log("checking id filter", data.projects[obj]);
-            
-            return data.projects[obj]
-        }
-    });
-    //console.log("iamge path: ", projects[0]["projectPictures"][0])
+    const projects = data.projects;
+    const currentProject = projects.filter(project => project.projectId === params.id);
+    console.log("projects: ", projects);
+    console.log("current project: ", currentProject);
+    console.log("iamge path: ", projects[0]["projectPictures"][0])
     let imgPath="";
-    if(projects[0]["projectPictures"][0]){
-        imgPath =  `../.` + projects[0]["projectPictures"][0]
+    if(currentProject[0]["projectPictures"][0]){
+        imgPath =  `../.` + currentProject[0]["projectPictures"][0]
     }
     return(
         <section className={commonStyles.container}>
@@ -38,12 +36,12 @@ export default async function ProjectsPage({params}){
             </section>
             <section className={commonStyles.descriptionCard}>
                 <div className={commonStyles.titleContent}>
-                    <h1>{projects[0]["projectName"]},</h1>
-                    <p>{projects[0]["projectYear"]}</p>
-                    <p>{projects[0]["projectMedium"]}</p>
+                    <h1>{currentProject[0]["projectName"]},</h1>
+                    <p>{currentProject[0]["projectYear"]}</p>
+                    <p>{currentProject[0]["projectMedium"]}</p>
                 </div>
                 <div className={commonStyles.descriptionContent}>
-                    <p>{projects[0]["projectDescription"]}</p>
+                    <p>{currentProject[0]["projectDescription"]}</p>
                 </div>
             </section>
             

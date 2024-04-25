@@ -16,6 +16,7 @@ export default async function ProjectsPage({params}){
     if(currentProject[0]["projectPictures"][0]){
         imgPath =  `../.` + currentProject[0]["projectPictures"][0]
     }
+    
     return(
         <section className={commonStyles.container}>
             <section>
@@ -41,7 +42,11 @@ export default async function ProjectsPage({params}){
                     <p>{currentProject[0]["projectMedium"]}</p>
                 </div>
                 <div className={commonStyles.descriptionContent}>
-                    <p>{currentProject[0]["projectDescription"]}</p>
+                    {
+                        currentProject[0]["projectDescription"].map((p, i)=>{
+                            return <p id={currentProject[0]["projectId"]+"-desc-" +i}>{p}</p>
+                        })
+                    }
                 </div>
             </section>
             

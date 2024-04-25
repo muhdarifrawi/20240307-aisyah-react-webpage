@@ -37,12 +37,6 @@
     height:100vh;
 }
 
-.alignCenter{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .backButton{
     background-color: #433F3A;
     height:40px;
@@ -52,10 +46,82 @@
     margin: 1rem 0 1rem 0;
     box-shadow:0 1.5px 4px 3px RGBA(0,0,0,0.15);
 }
+/* for sizes bigger than 600px */
+@media screen and (min-width: 600px) {
+    .container{
+        margin:0 5vw 0 5vw;
+    }
+    .alignCenter{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        width:30vw;
+        margin:0;
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .card::after{
+        content:'';
+        position:absolute;
+        left:0; top:0;
+        width:100%; height:100%;
+        display:inline-block;
+        background: linear-gradient(180deg, rgba(255, 255, 255,0.25) 0%, rgba(255, 255, 255,0.55) 100%);;
+    }
+    .cardTitle{
+        position:absolute;
+        font-size: 21pt;
+        color:black;
+        padding-bottom:1rem;
+        z-index:1;
+    }
+    .image{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        scale:0.5;
+    }
+    .imageContainer{
+        width:100%;
+        height:55vh;
+        margin:1rem 0 1rem 0;
+        position:relative;
+    }
+    .projectImages{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        
+    }
+    .descriptionCard{
+        background-color: aquamarine;
+        width:100%;
+        margin:1rem 0 1rem 0;
+        padding: 1.5rem;
+        position:relative;
+        border-radius: 10px;
+    }
+    .titleContent{
+        margin:0 0 2rem 0;
+    }
+    .descriptionContent{
+        margin:2rem 0 0 0;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .container{
         margin:0 5vw 0 5vw;
+    }
+    .alignCenter{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
     .card{
         width:80vw;

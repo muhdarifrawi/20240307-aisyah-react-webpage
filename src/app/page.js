@@ -45,13 +45,10 @@ export default async function Home() {
     )
   });  
 
-  //console.log(projects);
   // This is the primary return that renders out the page
   return (
     <main className={commonStyles.container}>
-      <h1>This is the homepage</h1>
-      {/* <Link href="/projects">Projects</Link>
-      <Link href="/about">About</Link> */}
+      <img src="./images/logo.png" className={commonStyles.bannerLogo}/>
 
       <div className={commonStyles.mobile}>
         <section className={commonStyles.alignCenter}>
@@ -65,10 +62,5 @@ export default async function Home() {
       </div>
       
     </main>
-    
-    // <main>
-    //   <Projects></Projects>
-    //   <About></About>
-    // </main>
   );
 }

@@ -46,6 +46,11 @@
     margin: 1rem 0 1rem 0;
     box-shadow:0 1.5px 4px 3px RGBA(0,0,0,0.15);
 }
+
+.bannerLogo{
+    height:10rem;
+}
+
 /* for sizes bigger than 600px - desktop */
 @media screen and (min-width: 600px) {
     .mobile{

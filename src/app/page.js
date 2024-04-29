@@ -11,7 +11,7 @@ export default async function Home() {
   const file = await fs.readFile(process.cwd() + "/src/app/data/projects.json", 
                                     "utf8");
   const data  = JSON.parse(file);
-  const projects = Object.keys(data.projects).map((obj,i) => {
+  const projectsMobile = Object.keys(data.projects).map((obj,i) => {
     const images = data.projects[obj].projectPictures.map(img => {
       return <img className={commonStyles.image} src={img}/>
     })
@@ -28,6 +28,22 @@ export default async function Home() {
         </Link>
     )
   });
+  const projectsDesktop = Object.keys(data.projects).map((obj,i) => {
+    const imageLinks = data.projects[obj].projectPictures[0]
+    const images = <img className={commonStyles.image} src={imageLinks}/>
+    const dataLength = Object.keys(data.projects).length;
+    const id = data.projects[obj].projectId;
+    console.log("==========");
+    console.log("id from pages", id);
+    console.log(dataLength);
+    return (
+        <Link href={`/projects/${id}`} className={commonStyles.desktopScale} id={"desktop-" + id}>
+        <section className={commonStyles.card}>
+          {images}
+        </section>
+        </Link>
+    )
+  });  
 
   //console.log(projects);
   // This is the primary return that renders out the page
@@ -37,9 +53,17 @@ export default async function Home() {
       {/* <Link href="/projects">Projects</Link>
       <Link href="/about">About</Link> */}
 
-<section className={commonStyles.alignCenter}>
-      {projects}
-      </section>
+      <div className={commonStyles.mobile}>
+        <section className={commonStyles.alignCenter}>
+          {projectsMobile}
+        </section>
+      </div>
+      <div className={commonStyles.desktop}>
+        <section>
+          {projectsDesktop}
+        </section>
+      </div>
+      
     </main>
     
     // <main>

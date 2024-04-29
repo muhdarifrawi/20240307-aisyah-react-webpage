@@ -29,3 +29,33 @@ a {
 p{
   margin: 0.8rem 0 0.8rem 0;
 }
+
+#desktop-aleph{
+  position:absolute;
+  top: 20vh;
+  left: 0vw;
+}
+
+#desktop-buka{
+  position:absolute;
+  top: 20vh;
+  left: 52vw;
+}
+
+#desktop-kembali{
+  position:absolute;
+  top: 40vh;
+  left: 18vw;
+}
+
+#desktop-ninenine{
+  position:absolute;
+  top: 20vh;
+  left: 70vw;
+}
+
+#desktop-ttwrc{
+  position:absolute;
+  top: 0vh;
+  left: 35vw;
+}

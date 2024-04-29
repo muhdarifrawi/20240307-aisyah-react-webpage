@@ -11,10 +11,10 @@
                 "“Sometimes you have to travel a long way to find what is near” - Paulo Coelho"
             ],
             "projectPictures":[
-                "./images/aleph/aleph-1.jpg",
-                "./images/aleph/aleph-2.jpg",
-                "./images/aleph/aleph-3.png",
-                "./images/aleph/aleph-4.png"
+                "/images/aleph/aleph-1.jpg",
+                "/images/aleph/aleph-2.jpg",
+                "/images/aleph/aleph-3.png",
+                "/images/aleph/aleph-4.png"
             ]
         },
         {   
@@ -29,9 +29,9 @@
                 "The bulk of the film is shot in one take where the camera doubles as an observer and a judge of character."
             ],
             "projectPictures":[
-                "./images/buka/buka-1.png",
-                "./images/buka/buka-2.png",
-                "./images/buka/buka-3.png"
+                "/images/buka/buka-1.png",
+                "/images/buka/buka-2.png",
+                "/images/buka/buka-3.png"
             ]
         },
         {   
@@ -44,9 +44,9 @@
                 "Through meditative and introspective repetition, the artist attempts to confront her fear of mortality by handling the very materials used during the dying process. Resembling skin, Kembali symbolises her spiritual return to her convictions as a Malay Muslim woman. This is further accentuated by the flow of artwork towards the Qibla – the direction towards the Kaaba in Mecca which all Muslims face when performing prayers."
             ],
             "projectPictures":[
-                "./images/kembali/kembali-1.JPG",
-                "./images/kembali/kembali-2.JPG",
-                "./images/kembali/kembali-3.JPG"
+                "/images/kembali/kembali-1.JPG",
+                "/images/kembali/kembali-2.JPG",
+                "/images/kembali/kembali-3.JPG"
             ]
         },
         {
@@ -63,19 +63,19 @@
                 "Like the chanting, the print process becomes ritualistic and instinctive after a while. Movements are spontaneous and mimic the current state of mind. It sometimes took on a meditative role. Other times, it bore the brunt of anger."
             ],
             "projectPictures":[
-                "./images/ninenine/99-1.jpg",
-                "./images/ninenine/99-2.jpg",
-                "./images/ninenine/99-3.jpg"
+                "/images/ninenine/99-1.jpg",
+                "/images/ninenine/99-2.jpg",
+                "/images/ninenine/99-3.jpg"
             ]
         },
         {
             "projectId":"ttwrc",
-            "projectName":"till the water runs clear",
+            "projectName":"Till the Water Runs Clear",
             "projectYear":"2023",
             "projectMedium":"Coffee on paper, 21cm x 30cm",
             "projectDescription":["“Till the water runs clear” emerged from intuitive mark-making. Used coffee grounds that contain personal history were repeatedly salvaged and filtered to extract every last drop of coffee. Playing with the constant pull between freedom and structure allowed emotions to influence intuitive actions. This ritualistic extraction and mark-making allowed for symbolic and metaphorical transformation of the found materials."],
             "projectPictures":[
-                "./images/ttwrc/ttwrc-1.png"
+                "/images/ttwrc/ttwrc-1.png"
             ]
         }
     ]

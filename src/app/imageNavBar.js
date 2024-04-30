@@ -3,7 +3,7 @@ import { useState } from "react";
 import commonStyles from "./css/common.module.css";
 import Image from "next/image";
 
-export default function imageNavbar(data) {
+export default function ImageNavbar(data) {
     console.log("imageNavber data: ", data["data"][0]);
     const [count, setCount] = useState(0);
     const totalNumberOfImages = data["data"][0]["projectPictures"].length;

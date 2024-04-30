@@ -18,7 +18,7 @@ export default async function Home() {
     const id = data.projects[obj].projectId;
     console.log("id from pages", id);
     return (
-        <Link href={`/projects/${id}`}>
+        <Link href={`/projects/${id}`} key={id}>
         <section className={commonStyles.card}>
           <h1 className={commonStyles.cardTitle}>
             {data.projects[obj].projectName}
@@ -35,7 +35,7 @@ export default async function Home() {
     console.log("==========");
     console.log("id from pages", id);
     return (
-        <Link href={`/projects/${id}`} className={commonStyles.desktopScale} id={"desktop-" + id}>
+        <Link href={`/projects/${id}`} className={commonStyles.desktopScale} id={"desktop-" + id} key={id}>
         <section className={commonStyles.card}>
           {images}
         </section>

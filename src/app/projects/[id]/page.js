@@ -36,7 +36,7 @@ export default async function ProjectsPage({ params }) {
                     <div className={commonStyles.descriptionContent}>
                         {
                             currentProject[0]["projectDescription"].map((p, i) => {
-                                return <p className={commonStyles.descriptionText} id={currentProject[0]["projectId"] + "-desc-" + i}>{p}</p>
+                                return <p className={commonStyles.descriptionText} id={currentProject[0]["projectId"] + "-desc-" + i} key={i}>{p}</p>
                             })
                         }
                     </div>
@@ -57,7 +57,7 @@ export default async function ProjectsPage({ params }) {
                     <div className={commonStyles.descriptionContent}>
                         {
                             currentProject[0]["projectDescription"].map((p, i) => {
-                                return <p className={commonStyles.descriptionText} id={currentProject[0]["projectId"] + "-desc-" + i}>{p}</p>
+                                return <p className={commonStyles.descriptionText} id={currentProject[0]["projectId"] + "-desc-" + i} key={i}>{p}</p>
                             })
                         }
                     </div>

@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default async function Home() {
   // creating and iterating the cards so it looks neater in code. 
-  const file = await fs.readFile(process.cwd() + "/public/data/projects.json", 
+  const file = await fs.readFile("./public/data/projects.json", 
                                     "utf8");
   const data  = JSON.parse(file);
   const projectsMobile = Object.keys(data.projects).map((obj,i) => {

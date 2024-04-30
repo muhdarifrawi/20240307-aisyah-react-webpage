@@ -2,7 +2,6 @@ import { promises as fs } from 'fs';
 import Link from 'next/link';
 import commonStyles from "../../css/common.module.css";
 import ImageNavbar from "../../imageNavBar.js"
-import imageNavbar from '@/app/imageNavBar';
 
 export default async function ProjectsPage({ params }) {
     console.log("=================== In ProjectsPage ======================");
@@ -11,13 +10,6 @@ export default async function ProjectsPage({ params }) {
     const data = JSON.parse(file);
     const projects = data.projects;
     const currentProject = projects.filter(project => project.projectId === params.id);
-    // console.log("projects: ", projects);
-    // console.log("current project: ", currentProject);
-    // console.log("iamge path: ", projects[0]["projectPictures"][0])
-    let imgPath = "";
-    if (currentProject[0]["projectPictures"][0]) {
-        imgPath = `../.` + currentProject[0]["projectPictures"][0]
-    }
 
     return (
         <section className={commonStyles.container}>
@@ -33,23 +25,6 @@ export default async function ProjectsPage({ params }) {
             </section>
             <section className={[commonStyles.desktopFormat, commonStyles.desktop].join(" ")}>
                 <section className={commonStyles.imageSection}>
-                    {/* <div className={commonStyles.imageContainer}>
-                        <img className={commonStyles.projectImages}
-                            src={imgPath} />
-                    </div> */}
-                    {/* <div className={commonStyles.imageNav}>
-                        <button className={commonStyles.imageNavBtn}>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/>
-                            </svg>
-                        </button>
-                        <span id="imgNumber">1</span>
-                        <button className={commonStyles.imageNavBtn}>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                                <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
-                            </svg>
-                        </button>
-                    </div> */}
                     <ImageNavbar data={currentProject}></ImageNavbar>
                 </section>
                 <section className={commonStyles.descriptionCard}>
@@ -69,9 +44,8 @@ export default async function ProjectsPage({ params }) {
             </section>
             <section className={[commonStyles.mobileFormat, commonStyles.mobile].join(" ")}>
                 <section>
-                    <div className={commonStyles.imageContainer}>
-                        <img className={commonStyles.projectImages}
-                            src={imgPath} />
+                    <div className={commonStyles.imageSection}>
+                        <ImageNavbar data={currentProject}></ImageNavbar>
                     </div>
                 </section>
                 <section className={commonStyles.descriptionCard}>

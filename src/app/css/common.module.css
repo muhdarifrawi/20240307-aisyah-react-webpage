@@ -61,7 +61,7 @@
 }
 
 .imageNav{
-    width:70%;
+    width:80%;
     display: flex;
     justify-content: space-between;
 }
@@ -228,5 +228,9 @@
     }
     .descriptionContent{
         margin:2rem 0 0 0;
+    }
+    .imageSection{
+        display: flex;
+        flex-direction:column;
     }
 }

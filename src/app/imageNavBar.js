@@ -4,14 +4,18 @@ import commonStyles from "./css/common.module.css";
 
 export default function imageNavbar(data) {
     console.log("imageNavber data: ", data["data"][0]);
-    const [count, setCount] = useState(1);
-
+    const [count, setCount] = useState(0);
+    const totalNumberOfImages = data["data"][0]["projectPictures"].length;
     function handleIncrease() {
-        setCount(count + 1);
+        if(count < totalNumberOfImages - 1){
+            setCount(count + 1);
+        }
     }
 
     function handleDecrease() {
-        setCount(count - 1);
+        if(count > 0 ){
+            setCount(count - 1);
+        }
     }
 
     let imgPath = `../.` + data["data"][0]["projectPictures"][count];
@@ -29,7 +33,7 @@ export default function imageNavbar(data) {
                     <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
                 </svg>
             </button>
-            <span id="imgNumber">{count}</span>
+            <p id="imgNumber">{count + 1} of {totalNumberOfImages}</p>
             <button className={commonStyles.imageNavBtn} onClick={handleIncrease}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                     <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />

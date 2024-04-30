@@ -14,7 +14,7 @@ export default async function Home() {
   const data  = JSON.parse(file);
   const projectsMobile = Object.keys(data.projects).map((obj,i) => {
     const imageLinks = data.projects[obj].projectPictures[0]
-    const images = <Image className={commonStyles.image} src={imageLinks} width={100} height={100}/>
+    const images = <Image className={commonStyles.image} src={imageLinks} width={100} height={100} unoptimized={true}/>
     const id = data.projects[obj].projectId;
     console.log("id from pages", id);
     return (

@@ -29,14 +29,14 @@ export default async function ProjectsPage({ params }) {
                 </section>
                 <section className={commonStyles.descriptionCard}>
                     <div className={commonStyles.titleContent}>
-                        <h1>{currentProject[0]["projectName"]},</h1>
+                        <h1 className={commonStyles.title}>{currentProject[0]["projectName"]}</h1>
                         <p>{currentProject[0]["projectYear"]}</p>
                         <p>{currentProject[0]["projectMedium"]}</p>
                     </div>
                     <div className={commonStyles.descriptionContent}>
                         {
                             currentProject[0]["projectDescription"].map((p, i) => {
-                                return <p id={currentProject[0]["projectId"] + "-desc-" + i}>{p}</p>
+                                return <p  className={commonStyles.descriptionText} id={currentProject[0]["projectId"] + "-desc-" + i}>{p}</p>
                             })
                         }
                     </div>

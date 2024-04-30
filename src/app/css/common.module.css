@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap');
+
 .title{
     font-size: 32pt;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.descriptionText{
+    font-size: 19pt;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    padding: 0.5rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
 }
 
 .section{
@@ -128,7 +147,7 @@
         
     }
     .descriptionCard{
-        background-color: #54504b;
+        /* background-color: #54504b; */
         width:50vw;
         margin:1rem 0 1rem 0;
         padding: 1.5rem;

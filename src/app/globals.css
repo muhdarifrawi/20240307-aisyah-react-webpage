@@ -59,3 +59,28 @@ p{
   top: 0vh;
   left: 35vw;
 }
+
+#aleph-desc-2{
+  padding:1rem 2.5rem 0 2.5rem;
+  font-style: italic;
+}
+
+#aleph-desc-3{
+  padding:0rem 3rem 0.5rem 3rem;
+  text-align:right;
+}
+
+#ninenine-desc-2{
+  padding:1rem 2.5rem 0 2.5rem;
+  font-style: italic;
+}
+
+#ninenine-desc-3{
+  padding:0rem 2.5rem 0 2.5rem;
+  font-style: italic;
+}
+
+#ninenine-desc-4{
+  padding:0rem 2.5rem 1rem 2.5rem;
+  font-style: italic;
+}

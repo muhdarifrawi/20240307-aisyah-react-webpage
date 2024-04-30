@@ -26,18 +26,18 @@ export default function About(){
                         About
                     </h1>
                     <section className={commonStyles.section}>
-                        <p>
+                        <p className={commonStyles.descriptionText}>
                             Aisyah is an art therapist and art practitioner guided by compassion and curiosity. 
                             Her art therapy journey was a natural synthesis of her formal training in the arts, 
                             and her will to purposefully serve the community. She holds experience from working 
                             and volunteering in the social service space. 
                         </p>
-                        <p>
+                        <p className={commonStyles.descriptionText}>
                             Since the course of her training, Aisyah continues to develop sensitivities to work 
                             with clients authentically and with dignity. She recognises the uniqueness of each 
                             person, and aspires to empower individuals through empathy and humility.  
                         </p>
-                        <p>
+                        <p className={commonStyles.descriptionText}>
                             As an art therapist, her interests lie in navigating spirituality, multi-faith and 
                             multi-cultural practice, and end-of-life care. In her art practice, she is drawn to 
                             intuitive and meditative processes, and exploring meaning behind materiality.
@@ -56,18 +56,18 @@ export default function About(){
                         About
                     </h1>
                     <section className={commonStyles.section}>
-                        <p>
+                        <p className={commonStyles.descriptionText}>
                             Aisyah is an art therapist and art practitioner guided by compassion and curiosity. 
                             Her art therapy journey was a natural synthesis of her formal training in the arts, 
                             and her will to purposefully serve the community. She holds experience from working 
                             and volunteering in the social service space. 
                         </p>
-                        <p>
+                        <p className={commonStyles.descriptionText}>
                             Since the course of her training, Aisyah continues to develop sensitivities to work 
                             with clients authentically and with dignity. She recognises the uniqueness of each 
                             person, and aspires to empower individuals through empathy and humility.  
                         </p>
-                        <p>
+                        <p className={commonStyles.descriptionText}>
                             As an art therapist, her interests lie in navigating spirituality, multi-faith and 
                             multi-cultural practice, and end-of-life care. In her art practice, she is drawn to 
                             intuitive and meditative processes, and exploring meaning behind materiality.

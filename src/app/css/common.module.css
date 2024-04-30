@@ -78,6 +78,11 @@
     cursor:pointer;
 }
 
+.navImageNumbers{
+    font-size: 14pt;
+    font-weight: 500;
+}
+
 /* for sizes bigger than 600px - desktop */
 @media screen and (min-width: 600px) {
     .mobile{

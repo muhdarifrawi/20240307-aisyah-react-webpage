@@ -126,7 +126,7 @@
     .projectImages{
         height:100%;
         width:100%;
-        object-fit:contain;
+        object-fit:cover;
         
     }
     .descriptionCard{
@@ -212,7 +212,7 @@
     .projectImages{
         height:100%;
         width:100%;
-        object-fit:cover;
+        object-fit:contain;
         
     }
     .descriptionCard{

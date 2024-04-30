@@ -46,7 +46,9 @@ export default async function Home() {
   // This is the primary return that renders out the page
   return (
     <main className={commonStyles.container}>
-      <Image src="/images/logo.png" className={commonStyles.bannerLogo} width={360} height={100} unoptimized={true}/>
+      <Link href="/about">
+        <Image src="/images/logo.png" className={commonStyles.bannerLogo} width={360} height={100} unoptimized={true}/>
+      </Link>
 
       <div className={commonStyles.mobile}>
         <section className={commonStyles.alignCenter}>

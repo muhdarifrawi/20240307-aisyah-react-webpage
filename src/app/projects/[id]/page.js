@@ -50,7 +50,7 @@ export default async function ProjectsPage({ params }) {
                 </section>
                 <section className={commonStyles.descriptionCard}>
                     <div className={commonStyles.titleContent}>
-                        <h1>{currentProject[0]["projectName"]},</h1>
+                        <h1 className={commonStyles.title}>{currentProject[0]["projectName"]}</h1>
                         <p>{currentProject[0]["projectYear"]}</p>
                         <p>{currentProject[0]["projectMedium"]}</p>
                     </div>

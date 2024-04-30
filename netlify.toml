@@ -1,2 +1,2 @@
 [functions]
-included_files = "/public/data/projects.json"
+included_files = ["/public/data/projects.json"]

@@ -2,12 +2,15 @@ import { promises as fs } from 'fs';
 import Link from 'next/link';
 import commonStyles from "../../css/common.module.css";
 import ImageNavbar from "../../imageNavBar.js"
+import projectsJSON from "../../../../public/data/projects.json";
 
 export default async function ProjectsPage({ params }) {
     console.log("=================== In ProjectsPage ======================");
-    const file = await fs.readFile("./public/data/projects.json",
-        "utf8");
-    const data = JSON.parse(file);
+    console.log("look here >>>", projectsJSON);
+    // const file = await fs.readFile("./public/data/projects.json",
+    //     "utf8");
+    // const data = JSON.parse(file);
+    const data = projectsJSON;
     const projects = data.projects;
     const currentProject = projects.filter(project => project.projectId === params.id);
 

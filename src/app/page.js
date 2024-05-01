@@ -6,12 +6,14 @@ import Link from "next/link";
 import {promises as fs} from 'fs';
 import commonStyles from "./css/common.module.css"
 import Image from "next/image";
+import projectsJSON from "../../public/data/projects.json";
 
 export default async function Home() {
   // creating and iterating the cards so it looks neater in code. 
-  const file = await fs.readFile("./public/data/projects.json", 
-                                    "utf8");
-  const data  = JSON.parse(file);
+  // const file = await fs.readFile("./public/data/projects.json", 
+  //                                   "utf8");
+  // const data  = JSON.parse(file);
+  const data = projectsJSON;
   const projectsMobile = Object.keys(data.projects).map((obj,i) => {
     const imageLinks = data.projects[obj].projectPictures[0]
     const images = <Image className={commonStyles.image} src={imageLinks} width={100} height={100} unoptimized={true}/>

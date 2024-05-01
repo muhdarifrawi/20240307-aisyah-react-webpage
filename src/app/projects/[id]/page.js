@@ -3,6 +3,7 @@ import Link from 'next/link';
 import commonStyles from "../../css/common.module.css";
 import ImageNavbar from "../../imageNavBar.js"
 import projectsJSON from "../../../../public/data/projects.json";
+import BackButton from '@/app/backButton';
 
 export default async function ProjectsPage({ params }) {
     console.log("=================== In ProjectsPage ======================");
@@ -17,14 +18,15 @@ export default async function ProjectsPage({ params }) {
     return (
         <section className={commonStyles.container}>
             <section>
-                <Link href="/">
+                {/* <Link href="/">
                     <button className={commonStyles.backButton}>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24"
                             viewBox="-150 -960 960 960" width="24">
                             <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
                         </svg>
                     </button>
-                </Link>
+                </Link> */}
+                <BackButton></BackButton>
             </section>
             <section className={[commonStyles.desktopFormat, commonStyles.desktop].join(" ")}>
                 <section className={commonStyles.imageSection}>

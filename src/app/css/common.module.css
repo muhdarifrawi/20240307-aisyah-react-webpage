@@ -75,6 +75,17 @@
     font-weight: 500;
 }
 
+.loadingScreen{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingText{
+    font-size: 32pt;
+}
+
 /* for sizes bigger than 600px - desktop */
 @media screen and (min-width: 600px) {
     .mobile{

@@ -84,3 +84,33 @@ p{
   padding:0rem 2.5rem 1rem 2.5rem;
   font-style: italic;
 }
+
+.dots {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  animation-name: jumpingDots;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#slidingDots{
+  width: 30vh;
+}
+
+@keyframes jumpingDots {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}

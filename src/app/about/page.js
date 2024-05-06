@@ -18,7 +18,8 @@ export default function About(){
             <section className={[commonStyles.desktopFormat, commonStyles.desktop].join(" ")}>
                 <section className={commonStyles.imageSection}>
                     <section className={commonStyles.imageContainer}>
-                        <Image src="/images/aisyah.JPG" className={commonStyles.projectImages} width={100} height={100} unoptimized={true} placeholder="blur"/>
+                        <Image src="/images/aisyah.JPG" className={commonStyles.projectImages} width={100} height={100}
+                                     unoptimized={true} placeholder="blur" blurDataURL="data:images/blurimg.png"/>
                     </section>
                 </section>
                 <section>
@@ -48,7 +49,8 @@ export default function About(){
             <section className={[commonStyles.mobileFormat, commonStyles.mobile].join(" ")}>
                 <section className={commonStyles.imageSection}>
                     <section className={commonStyles.imageContainer}>
-                        <Image src="/images/aisyah.JPG" className={commonStyles.projectImages} width={100} height={100} unoptimized={true} placeholder="blur"/>
+                        <Image src="/images/aisyah.JPG" className={commonStyles.projectImages} width={100} height={100}
+                                     unoptimized={true} placeholder="blur" blurDataURL="data:images/blurimg.png"/>
                     </section>
                 </section>
                 <section>

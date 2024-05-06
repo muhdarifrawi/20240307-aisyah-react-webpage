@@ -16,7 +16,8 @@ export default async function Home() {
   const data = projectsJSON;
   const projectsMobile = Object.keys(data.projects).map((obj,i) => {
     const imageLinks = data.projects[obj].projectPictures[0]
-    const images = <Image className={commonStyles.image} src={imageLinks} width={100} height={100} unoptimized={true} placeholder="blur"/>
+    const images = <Image className={commonStyles.image} src={imageLinks} width={100} height={100} 
+                      unoptimized={true} placeholder="blur" blurDataURL="data:images/blurimg.png"/>
     const id = data.projects[obj].projectId;
     console.log("id from pages", id);
     return (
@@ -32,7 +33,8 @@ export default async function Home() {
   });
   const projectsDesktop = Object.keys(data.projects).map((obj,i) => {
     const imageLinks = data.projects[obj].projectPictures[0]
-    const images = <Image className={commonStyles.image} src={imageLinks} width={100} height={100} unoptimized={true} placeholder="blur"/>
+    const images = <Image className={commonStyles.image} src={imageLinks} width={100} height={100} 
+                    unoptimized={true} placeholder="blur" blurDataURL="data:images/blurimg.png"/>
     const id = data.projects[obj].projectId;
     console.log("==========");
     console.log("id from pages", id);
@@ -49,7 +51,8 @@ export default async function Home() {
   return (
     <main className={commonStyles.container}>
       <Link href="/about">
-        <Image src="/images/logo.png" className={commonStyles.bannerLogo} width={360} height={100} unoptimized={true} placeholder="blur"/>
+        <Image src="/images/logo.png" className={commonStyles.bannerLogo} width={360} height={100}
+                   unoptimized={true} placeholder="blur" blurDataURL="data:images/blurimg.png"/>
       </Link>
 
       <div className={commonStyles.mobile}>
